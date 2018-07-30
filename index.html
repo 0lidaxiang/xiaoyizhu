@@ -10,6 +10,10 @@
 font-family: digit;
 src: url('digital-7_mono.ttf') format("truetype");
 }
+
+.lineHeight120{
+  line-height: 120%;
+}
 .lineHeight{
   line-height: 130%;
 }
@@ -23,55 +27,75 @@ src: url('digital-7_mono.ttf') format("truetype");
 </head>
 
 <body>
-<div style="text-align:center;clear:both;">
-<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-<script src="/follow.js" type="text/javascript"></script>
-</div>
-<div id="mainDiv">
-<div id="content">
-<div id="code" style="font-size: 14px;">
+  <div style="text-align:center;clear:both;">
+  <!-- <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script> -->
+  <!-- <script src="/follow.js" type="text/javascript"></script> -->
+  </div>
 
-<span class="keyword lineHeight"> 2018—06-26 </span> I first see you in Taipei. <br />
-<span class="keyword lineHeight"> 2018—07-03 </span> We fall in love river. <br />
-<span class="keyword lineHeight"> 2018—07-08 </span> <span class="lineHeight">  Our first date is in ShangHai and meet at HongQiao Station. I am in foolish but you are so smart at the moment that we saw each other. When we are separated, I saw your eyes, understand your meaning and firstly kiss you.  </span>
-<br/>
-<span class="keyword "> 2018—07-15 </span> <span class="lineHeight"> Our second date is in TaiCang of SuZhou. This is my first to come to your hometown. </span>
-<br />
-<br />
-<br />
+  <!-- 主要文字内容 -->
+  <div id="mainDiv">
 
-It took God six days to create the world and we are too late to fall in love now.
+    <div id="content">
+      <!-- 左侧文字 -->
+      <div id="code">
+          <span class="lineHeight120">It took God six days to create the world and we are too late to fall in love now.</span>
+        <br />
+        <br />
 
-<br />
-<br />
+        <span class="comments lineHeight120">AS time goes on.</span><br />
+        The boy can not be separated the girl;<br />
+        <span class="comments lineHeight120">At the same time.</span><br />
+        The girl can not be separated the boy;<br />
+        <br/>
+        <br/>
+        I want to say:
+        <span class="keyword lineHeight120">XiaoYi, I love you forever. </span><br />
+        I want you could always be happy.
+        <br />
+        <br />
+        <br />
+        <hr>
 
-<span class="comments">AS time goes on.</span><br />
-The boy can not be separated the girl;<br />
-<span class="comments">At the same time.</span><br />
-The girl can not be separated the boy;<br />
+        <!-- 约会、纪念日记录 -->
+        <span class="keyword ">  2018—07-27 ~ 2018—07-29 </span> <span class="lineHeight"> The last day (26th) is our face-to-face anniversary. We meet in HangZhou firt time. We also live in the Crystal Orange Hotel and i just want you are happy and enjoy it. <br>
+        We went to the Leifeng Pagoda and walked through the long West Lake Sudi. We walked through the Southern Song Dynasty Imperial Street, Qinghefang, and saw the Beijing-Hangzhou Grand Canal. We also ate delicious sushi, ice cream, and watched a funny movie.<br>
+        I think you are a Charming Leprechaun and make me love you so much. I wish my words on the night of 28th can give you more courage to face to the future, yeah, our future. I believe that We will be happy FOREVER.
+        </span><br/>
 
-<br/>
-<br/>
-I want to say:<br />
-<span class="keyword">XiaoYi, I love you forever. </span><br />
-I want you could always be happy. <br />
+        <span class="keyword "> 2018—07-21 ~ 2018—07-22</span> <span class="lineHeight"> Your new semester is from 19th July and we miss each other so much in this week. Maybe it causes of that you have left the home and we are free now. <br>
+          You want to see the beautiful night view of the Bund, and we walk for a long way from NanjingWest Road to the Bund but left quickly beacause of the Typhoon "AnBi". We live together first time in Crystal Orange Hotel, enjoy the night and kiss for hours. <br>
+        Next day, we were really trapped in the hotel for two hours by the typhoon, and then went shopping together for the first time.
+        </span> <br/>
 
-</div>
+        <span class="keyword "> 2018—07-15 </span> <span class="lineHeight"> Our second date is in TaiCang of SuZhou. This is my first to come to your hometown. </span> <br/>
 
-<div id="loveHeart">
-<canvas id="garden"></canvas>
-<div id="words">
-<div id="messages">
-亲爱的xyz，这是我们相恋在一起的时光。
-<div id="elapseClock"></div>
-</div>
-<div id="loveu">
-给你 勇气 直到世界崩坏。<br/>
-<div class="signature">- 李先生</div>
-</div>
-</div>
-</div>
-</div>
+        <span class="keyword lineHeight"> 2018—07-08 </span> <span class="lineHeight">  Our first date is in ShangHai and meet at HongQiao Station. I am in foolish but you are so smart at the moment that we saw each other. When we are separated, I saw your eyes, understand your meaning and firstly kiss you.  </span><br />
+        <span class="keyword lineHeight"> 2018—07-03 </span> We fall in love river. <br />
+        <span class="keyword lineHeight"> 2018—06-26 </span> I first see you in Taipei. <br />
+        <br />
+        <br />
+        <br />
+
+      </div>
+
+      <!-- 右侧心形以及文字 -->
+      <div id="loveHeart">
+        <!-- 心形 -->
+        <canvas id="garden"></canvas>
+
+        <!-- 文字 -->
+        <div id="words">
+          <div id="messages">
+          亲爱的xyz，这是我们相恋在一起的时光。
+          <div id="elapseClock"></div>
+        </div>
+        <div id="loveu">
+          给你 勇气 直到世界崩坏。<br/>
+          <div class="signature">- Mr Li</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -96,7 +120,7 @@ document.execCommand("stop");
 } else {
 setTimeout(function () {
 startHeartAnimation();
-}, 50);
+}, 10);
 
 timeElapse(together);
 setInterval(function () {
